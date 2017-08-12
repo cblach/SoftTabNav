@@ -1,0 +1,34 @@
+[
+    {
+        "keys": [ "left" ],
+        "command": "softtabnav",
+        "args": { "isleft": true, "shift": false },
+        "context": [
+            { "key": "setting.translate_tabs_to_spaces", "operator": "equal", "operand": true },
+        ]
+    },
+    {
+        "keys": [ "right" ],
+        "args": { "isleft": false, "shift": false },
+        "command": "softtabnav",
+        "context": [
+            { "key": "setting.translate_tabs_to_spaces", "operator": "equal", "operand": true },
+        ]
+    },
+    {
+        "keys": [ "shift+left" ],
+        "command": "softtabnav",
+        "args": { "isleft": true, "shift": true },
+        "context": [
+            { "key": "setting.translate_tabs_to_spaces", "operator": "equal", "operand": true },
+        ]
+    },
+    {
+        "keys": [ "shift+right" ],
+        "args": { "isleft": false, "shift": true },
+        "command": "softtabnav",
+        "context": [
+            { "key": "setting.translate_tabs_to_spaces", "operator": "equal", "operand": true },
+        ]
+    }
+]
