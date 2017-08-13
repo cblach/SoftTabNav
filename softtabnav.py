@@ -29,7 +29,7 @@ class SofttabnavCommand(sublime_plugin.TextCommand):
                 txt = self.view.substr(before)
             else:
                 target = lnregion.begin() + (pos - lnregion.begin() + tabsize) // tabsize * tabsize
-                after = sublime.Region(lnregion.begin(), min(lnregion.end(), target))
+                after = sublime.Region(lnregion.begin(), target)
                 txt = self.view.substr(after)
 
             if txt != ''.ljust(len(txt)):
